@@ -15,7 +15,8 @@ bun run index.ts
 This project was created using `bun init` in bun v1.0.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
 CAMPUS X Backend Application
-This project is a Twitter backend application built using Node.js, Prisma, SQLite, JWT authentication, passwordless authentication, various middlewares, user management functionalities, and Docker containerization.
+This project is a CAMPSU-X backend application built using Node.js, Prisma, SQLite, JWT authentication, passwordless authentication, various middlewares, user management functionalities, and Docker containerization.
+
 
 Features
 Node.js: Backend server using Node.js for handling HTTP requests.
