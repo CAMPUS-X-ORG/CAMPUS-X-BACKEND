@@ -1,7 +1,8 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
 import jwt from 'jsonwebtoken';
-import { sendEmailToken } from '../services/emialService.ts';
+import { sendEmailToken } from '../services/emailService';
+
 const EMAIL_TOKEN_EXPIRATION_MINUTES = 10;
 const AUTHENTICATION_EXPIRATION_HOURS = 12;
 const JWT_SECRET = process.env.JWT_SECRET || 'SUPER SECRET';

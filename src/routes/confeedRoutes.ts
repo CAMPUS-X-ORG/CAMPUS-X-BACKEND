@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 // Confeed CRUD
 
-// Create confeed
+// Create Confeed
 router.post('/', async (req, res) => {
   const { content, image } = req.body;
   // @ts-ignore
@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// list confeed
+// list Confeed
 router.get('/', async (req, res) => {
   const allConfeed = await prisma.confeed.findMany({
     include: {
@@ -45,7 +45,7 @@ router.get('/', async (req, res) => {
   res.json(allConfeed);
 });
 
-// get one confeed
+// get one Confeed
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
   console.log('Query confeed with id: ', id);
@@ -61,13 +61,13 @@ router.get('/:id', async (req, res) => {
   res.json(confeed);
 });
 
-// update confeed
+// update Confeed
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   res.status(501).json({ error: `Not Implemented: ${id}` });
 });
 
-// delete confeed
+// delete Confeed
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;
   await prisma.confeed.delete({ where: { id: Number(id) } });
