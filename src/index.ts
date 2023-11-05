@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
   res.send('Hello "updated" world!');
 });
 
-app.listen(5000, () => {
-  console.log('Server ready at localhost:5000');
+app.listen(3000, () => {
+  console.log('Server ready at localhost:3000');
 });
