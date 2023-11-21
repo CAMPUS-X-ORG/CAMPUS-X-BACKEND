@@ -42,7 +42,7 @@ model Token {
   user User @relation(fields: [userId], references: [id])
 }
 
-// enum TokenType {
+// enum TokenType { 
 //   EMAIL
 //   API
 // }
